@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ticket-service"
+version = "0.1.0"
+description = "A service end point dealing with tickets."
+authors = ["Peter Joole <peter.joole@belfius.be>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+qrcode = {extras = ["pil"], version = "^7.3"}
+opencv-python = "^4.5.3"
+Flask = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2.5"
+pytest-cov = "^2.12.1"
+flake8 = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
